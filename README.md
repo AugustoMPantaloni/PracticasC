@@ -16,3 +16,9 @@ Tienes que comprobar que la variable "n" tenga un número comprendido entre el 1
 - Una vez programada la función, el main hará lo siguiente:
 Creamos una variable tipo int llamada "longitud_array". Pediremos al usuario que introduzca un número entre el 1 y el 10. Con la función que hemos creado comprobaremos que ese número está entre el 1 y el 10, si no es así mostraremos por pantalla que la longitud no es correcta y terminará el programa. 
 Si el valor es válido crearemos un array con la longitud dada por el usuario y luego rellenaremos el array con números del 1 hasta la longitud, es decir, si el usuario introduce un 4, debemos crear un array de índice 4 y los valores que les daremos serán: 1, 2, 3 y 4, respectivamente.
+
+## EJERCICIO FINAL
+- Define una estructura_alumnos que contenga el nombre, dni, y edad de cada uno de los alumnos.
+- Crea un total de 3 alumnos e introduce todos sus datos (pidiendo al usuario que los introduzca por teclado).
+- Una vez hecho esto, pide al usuario que introduzca un DNI. Tendremos que mostrar por pantalla todos los datos del alumno que pertenezca a dicho DNI. Si el DNI introducido no existe entre los alumnos, saldrá un mensaje que nos lo indique. 
+- Realizar esta operación siempre, hasta que el usuario introduzca la palabra "salir", entonces ya acabará el programa. Si no introduce "salir", el programa seguirá pidiendo un DNI.
