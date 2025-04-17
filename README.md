@@ -1,24 +1,155 @@
-##  EJERCICIO Nº 1
-Realiza un programa con 3 variables, dos para números enteros, y otra llamada "resultado". Inicializa las variables numéricas con los valores 7 y 2, respectivamente y:
-- Muestra por pantalla la resta de estos dos números.
-- Muestra por pantalla la suma de estos dos números, multiplicada por 10. Y ese 10, será el valor de una constante creada con anterioridad por nosotros.
-- Intenta realizar el mismo ejercicio sin la creación de la variable "resultado".
+# Plan de Estudio en C - Versión Estructurada
 
-##  EJERCICIO Nº2
-Realiza un programa que contenga un menú de 3 opciones. Estas opciones serán 1, 2 y 3. Si el usuario introduce el número 0, el programa acabará, pero mientras elija una opción válida que no sea el 0 el programa debe seguir. 
-- Estaría bien que si introduce una opción que no sea del menú, o sea, ni 1, ni 2, ni 3, el programa te avisara. 
-Es decir, que el resultado del programa tiene que ser como se aprecia en el vídeo en la parte inferior de la lección.
+**Notas**:
+- C es un lenguaje compilado, necesitarás un compilador como **GCC**.
+- Para compilar los ejercicios usa el siguiente comando: gcc archivo.c -o ejecutable
 
-##  EJERCICIO Nº3
-- Crea una función llamada Máximo10, que devuelva un int, y reciba por parámetro una variable tipo int también. La cabecera de la función puede ser la siguiente:
-int Máximo10 (int n)
-Tienes que comprobar que la variable "n" tenga un número comprendido entre el 1 y el 10. Si "n" no está entre 1 y 10, devuelves un 0, y si "n" tiene un valor entre 1 y 10, devuelves ese mismo valor. 
-- Una vez programada la función, el main hará lo siguiente:
-Creamos una variable tipo int llamada "longitud_array". Pediremos al usuario que introduzca un número entre el 1 y el 10. Con la función que hemos creado comprobaremos que ese número está entre el 1 y el 10, si no es así mostraremos por pantalla que la longitud no es correcta y terminará el programa. 
-Si el valor es válido crearemos un array con la longitud dada por el usuario y luego rellenaremos el array con números del 1 hasta la longitud, es decir, si el usuario introduce un 4, debemos crear un array de índice 4 y los valores que les daremos serán: 1, 2, 3 y 4, respectivamente.
+- C se enfoca en sistemas y consola, no tiene soporte para DOM ni características web.
+- La gestión de memoria es manual (malloc/free).
+- No existen objetos nativos en C, se simulan con structs y funciones.
 
-## EJERCICIO FINAL
-- Define una estructura_alumnos que contenga el nombre, dni, y edad de cada uno de los alumnos.
-- Crea un total de 3 alumnos e introduce todos sus datos (pidiendo al usuario que los introduzca por teclado).
-- Una vez hecho esto, pide al usuario que introduzca un DNI. Tendremos que mostrar por pantalla todos los datos del alumno que pertenezca a dicho DNI. Si el DNI introducido no existe entre los alumnos, saldrá un mensaje que nos lo indique. 
-- Realizar esta operación siempre, hasta que el usuario introduzca la palabra "salir", entonces ya acabará el programa. Si no introduce "salir", el programa seguirá pidiendo un DNI.
+##  Etapa 1: Fundamentos
+1. Variables y Tipos de Datos
+Objetivo: Dominar los tipos básicos y declaraciones.
+*Teoría:*
+    Tipos primitivos: int, float, double, char.
+    Modificadores: short, long, signed, unsigned.
+    Alcance de las variables (scope).
+    Constantes con #define y const.
+
+*Ejercicios:*
+    A. Declarar variables de diferentes tipos.
+    B. Calcular el tamaño de los tipos con sizeof().
+    C. Crear constantes para PI y gravedad.
+
+2. Operadores y Expresiones
+*Teoría:*
+    Aritméticos: +, -, *, /, %, ++, --.
+    Relacionales: ==, !=, >, <, >=, <=.
+    Lógicos: &&, ||, !.
+    Bit a bit: &, |, ^, ~, <<, >>.
+
+*Ejercicios:*
+    A. Crear una calculadora básica.
+    B. Determinar si un número es par o impar utilizando el operador %.
+    C. Realizar operaciones con bits.
+
+3. Estructuras de Control
+*Teoría:*
+Condicionales: if/else, switch.
+Bucles: for, while, do-while.
+Control de flujo: break, continue, goto (evitar).
+
+*Ejercicios:*
+A. Clasificar números (positivo/negativo/cero).
+B. Imprimir la tabla de multiplicar.
+C. Crear un menú con switch (ejemplo: calculadora).
+
+4. Funciones
+*Teoría:*
+Declaración y prototipos.
+Paso por valor vs. paso por referencia.
+Recursividad.
+
+*Ejercicios:*
+A. Crear una función que calcule la potencia de un número.
+B. Implementar una función recursiva para el cálculo del factorial.
+C. Crear una función que intercambie valores (paso por referencia).
+
+##  Etapa 2: Estructuras de Datos y Memoria
+5. Arrays y Strings
+*Teoría:*
+Arrays unidimensionales y multidimensionales.
+Strings como arrays de char.
+Funciones de la biblioteca string.h.
+
+*Ejercicios:*
+A. Buscar el valor máximo en un array.
+B. Invertir un string.
+C. Concatenar dos arrays.
+
+6. Estructuras (Structs)
+*Teoría:*
+Uso de struct para agrupar datos.
+typedef para crear tipos.
+Uniones y enumeraciones.
+
+*Ejercicios:*
+A. Crear una struct para representar un punto 2D.
+B. Crear un sistema de inventario utilizando structs.
+C. Implementar una biblioteca para la gestión de libros.
+
+7. Gestión de Memoria
+*Teoría:*
+Pila vs. Heap.
+Funciones: malloc, calloc, realloc, free.
+Arreglos dinámicos.
+
+*Ejercicios:*
+A. Crear un array dinámico.
+B. Crear una matriz dinámica.
+C. Implementar una lista enlazada simple.
+
+8. Archivos (Files I/O)
+*Teoría:*
+Funciones: fopen, fclose.
+Modos de apertura: "r", "w", "a".
+Funciones: fread, fwrite, fprintf, fscanf.
+
+*Ejercicios:*
+A. Copiar un archivo.
+B. Crear un registro de usuarios en un archivo.
+C. Buscar texto en un archivo.
+
+##  Etapa 3: Conceptos Avanzados
+9. Punteros Avanzados
+*Teoría:*
+Aritmética de punteros.
+Punteros a funciones.
+Relación punteros vs. arrays.
+
+*Ejercicios:*
+A. Implementar funciones de string.h usando punteros.
+B. Ordenar un array utilizando punteros.
+C. Crear una calculadora con punteros a funciones.
+
+10. Recursión
+*Teoría:*
+Caso base vs. caso recursivo.
+Recursión vs. iteración.
+
+*Ejercicios:*
+A. Resolver las Torres de Hanoi.
+B. Implementar la serie de Fibonacci de manera recursiva.
+C. Realizar una búsqueda binaria recursiva.
+
+##  Proyectos en C
+1. Sistema de Gestión
+Descripción: Un sistema de inventario o gestión de empleados que:
+Guarde datos en archivos.
+Permita realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar).
+Utilice structs y memoria dinámica.
+
+2. Juegos de Consola
+Descripción: Implementar juegos clásicos en consola:
+- Tres en raya (Tic-tac-toe).
+- Ahorcado.
+- Snake (usando la librería ncurses).
+
+3. Herramientas de Sistema
+Descripción: Desarrollar herramientas útiles para el sistema:
+- Mini shell básico.
+- Analizador de archivos (contar líneas y palabras).
+- Copiador de directorios.
+
+4. Algoritmos Clásicos
+Descripción: Implementar algoritmos clásicos de programación:
+- Algoritmos de ordenación (Burbuja, Inserción, etc.).
+- Estructuras de datos (listas, árboles).
+- Resolver problemas clásicos como las N-reinas.
+
+*Recursos Recomendados*
+- Compilador: GCC (Linux) o MinGW (Windows).
+- IDE: VS Code, CLion, o Code::Blocks.
+- Libro: "El Lenguaje de Programación C" por Brian W. Kernighan y Dennis M. Ritchie (K&R).
+- Práctica: Realiza proyectos pequeños utilizando Makefiles.
