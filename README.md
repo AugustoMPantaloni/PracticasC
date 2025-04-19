@@ -40,19 +40,19 @@
 *Etapa 2: Estructuras de Datos y Memoria*
 
 5. Arrays y Strings
-Ejercicios:
+##  Ejercicios:
 - A. Pide al usuario ingresar 10 números. Luego imprime el mayor y su posición en el array.
 - B. Pide al usuario ingresar un string y luego imprime ese string al revés sin usar funciones de string.h.
 - C. Escribe un programa que concatene dos strings ingresados por el usuario y los imprima juntos.
 
 6. Structs
-Ejercicios:
+##  Ejercicios:
 - A. Define una struct Punto2D con x e y. Escribe una función que calcule la distancia entre dos puntos.
 - B. Define un struct Item con nombre, cantidad y precio. Crea un array para simular un inventario con al menos 3 productos, y muestra el total de valores      almacenados.
 - C. Crea una pequeña "base de datos" de libros con structs: título, autor, año y código ISBN. Agrega funciones para agregar, buscar por título y listar todos.
 
 7. Gestión de Memoria
-Ejercicios:
+##  Ejercicios:
 - A. Pide al usuario el tamaño de un array. Usa malloc para crearlo dinámicamente, llena con números ingresados por teclado, y luego libera la memoria.
 - B. Crea una matriz dinámica NxM con malloc y free. Llénala con valores aleatorios entre 1 y 100 y muéstrala en pantalla.
 - C. Implementa una lista enlazada simple que permita agregar elementos al final, mostrar todos los nodos, y liberar la memoria usada.
