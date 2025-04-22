@@ -40,15 +40,19 @@
 *Etapa 2: Estructuras de Datos y Memoria*
 
 5. Arrays y Strings
-##  Ejercicios:
-- A. Pide al usuario ingresar 10 números. Luego imprime el mayor y su posición en el array.
+##  Ejercicios: SIN USAR LA LIBRERIA
+- A. Pide al usuario ingresar 10 números. Luego imprime el mayor y su posición en el array. 
 - B. Pide al usuario ingresar un string y luego imprime ese string al revés sin usar funciones de string.h.
 - C. Escribe un programa que concatene dos strings ingresados por el usuario y los imprima juntos.
+- D. Pide al usuario ingresar 5 palabras y guárdalas en un array. Luego imprime las palabras en orden inverso.
+- E. Crea un array de 10 enteros. Cuenta cuántos números pares e impares hay.
+- F. Pide una palabra al usuario y muestra cuántas vocales contiene.
+- G. Pide un string y determina si es un palíndromo (ej: "reconocer", "anilina").
 
 6. Structs
 ##  Ejercicios:
 - A. Define una struct Punto2D con x e y. Escribe una función que calcule la distancia entre dos puntos.
-- B. Define un struct Item con nombre, cantidad y precio. Crea un array para simular un inventario con al menos 3 productos, y muestra el total de valores      almacenados.
+- B. Define un struct Item con nombre, cantidad y precio. Crea un array para simular un inventario con al menos 3 productos, y muestra el total de valores almacenados.
 - C. Crea una pequeña "base de datos" de libros con structs: título, autor, año y código ISBN. Agrega funciones para agregar, buscar por título y listar todos.
 
 7. Gestión de Memoria
