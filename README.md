@@ -42,7 +42,7 @@
 5. Arrays y Strings
 ##  Ejercicios: SIN USAR LA LIBRERIA
 - A. Pide al usuario ingresar 10 números. Luego imprime el mayor y su posición en el array. 
-- B. Pide al usuario ingresar un string y luego imprime ese string al revés sin usar funciones de string.h.
+- B. Pide al usuario ingresar un string y luego imprime ese string al revés.
 - C. Escribe un programa que concatene dos strings ingresados por el usuario y los imprima juntos.
 - D. Pide al usuario ingresar 5 palabras y guárdalas en un array. Luego imprime las palabras en orden inverso.
 - E. Crea un array de 10 enteros. Cuenta cuántos números pares e impares hay.

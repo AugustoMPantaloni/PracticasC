@@ -1,21 +1,30 @@
 #include <stdio.h>
-#include <string.h>
 
 int main(void){
+
     char palabra[50];
-    int contador = 0;
 
     printf("Ingrese una palabra\n");
     fgets(palabra, 50, stdin);
-    palabra[strcspn(palabra, "\n")] = '\0';
+    for(int i = 0; i < 50; i++){
+        if(palabra[i] == '\n'){
+            palabra[i] = '\0';
+        }
+        break;
+    }
 
-    int longitud = strlen(palabra);
+    int longitud;
+    for(int i = 0; i < 50; i++){
+        if(palabra[i] == '\0'){
+            longitud = i;
+        }
+    }
 
     for(int i = 0; i < longitud; i++){
         if(palabra[i] == 'a' || palabra[i] == 'e' || palabra[i] == 'i' || palabra[i] == 'o' || palabra[i] == 'u'){
-            contador ++;
+            printf("%c\n", palabra[i]);
         }
     }
-    
-    printf("La palabra tiene %d vocales", contador);
+
+    return 0;
 }

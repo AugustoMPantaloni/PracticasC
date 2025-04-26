@@ -1,23 +1,55 @@
 #include <stdio.h>
-#include <string.h>
 
 int main (void){
-    char palabra1[50];
-    char palabra2[50];
-    char resultado[100] = "";
+
+    char string1[50];
+    char string2[50];
 
     printf("Ingrese una palabra\n");
-    fgets(palabra1, 50, stdin);
-    palabra1[strcspn(palabra1, "\n")] = '\0';
+    fgets(string1, 50, stdin);
+    for(int i = 0; i < 50; i++ ){
+        if(string1[i] == '\n'){
+            string1[i] = '\0';
+        }
+    }
 
-    printf("Ingrese OTRA palabra\n");
-    fgets(palabra2, 50, stdin);
-    palabra2[strcspn(palabra2, "\n")] ='\0';
+    printf("Ingrese otra palabra\n");
+    fgets(string2, 50, stdin);
+    for(int i = 0; i < 50; i++ ){
+        if(string2[i] == '\n'){
+            string2[i] = '\0';
+        }
+    }
 
-    strcat(resultado, palabra1);
-    strcat(resultado, palabra2);
+    int longitud1;
+    int longitud2;
 
-    printf("%s\n", resultado);
+    for(int i = 0; i < 50; i++){
+        if(string1[i] == '\0'){
+            longitud1 = i;
+            break;
+        }
+    }
+    for(int i = 0; i < 50; i++){
+        if(string2[i] == '\0'){
+            longitud2 = i;
+            break;
+        }
+    }
+
+    char concat[100];
+
+    for (int i = 0; i < longitud1; i++){
+        concat[i] = string1[i];
+    }
+
+    for( int j = 0; j <= longitud2; j++){
+        concat[longitud1 + j] = string2[j];
+    }
+
+    printf("%s", concat);
+
+
 
     return 0;
 }

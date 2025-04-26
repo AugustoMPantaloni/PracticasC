@@ -1,19 +1,21 @@
 #include <stdio.h>
 
+
 int main(void){
-    int numeros[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    int numeros[10] = {15, 22, 53, 41, 5, 126, 57, 889, 19, 410};
 
     int pares = 0;
     int impares = 0;
 
-    for (int i = 0; i < 10; i++)
+    for(int i = 0; i < 10; i++){
         if(numeros[i] % 2 == 0){
-            pares ++;
-        }else {
-            impares++;
+            pares += 1;
+        } else{
+            impares += 1;
         }
+    }
 
-    printf("cantidad de pares: %d \n cantidad de impares: %d", pares, impares);
-
+    printf("Cantidad de numeros pares: %d\n cantidad de numeros impares:%d", pares, impares);
     return 0;
 }
