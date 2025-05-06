@@ -37,6 +37,9 @@
 - B. Escribe factorial(int n) de forma recursiva. Llama a la función desde main() y muestra el resultado.
 - C. Escribe una función que reciba dos variables por referencia e intercambie sus valores. Prueba con diferentes tipos de datos.
 
+
+**Si llegaste hasta aca, pasamos a la carpeta de ejercicios de "BUCLES" antes de seguir**
+
 *Etapa 2: Estructuras de Datos y Memoria*
 
 5. Arrays y Strings
