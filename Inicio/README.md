@@ -7,6 +7,9 @@
 - La gestión de memoria es manual (malloc/free).
 - No existen objetos nativos en C, se simulan con structs y funciones.
 
+-- Puedes ver la resolucion a cada ejercicio en la respectiva carpeta de cada etapa, pero intenta resolverlo por ti mismo primero. 
+-- Usa un limite de tiempo para resolver cada ejercicio por ejemplo 1 hora.
+
 *Etapa 1: Fundamentos*
 
 1. Variables y Tipos de Datos

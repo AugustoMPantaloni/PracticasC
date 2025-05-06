@@ -1,4 +1,4 @@
-# Plan de Estudio en C - Alogaritmos
+# Plan de Estudio en C - Algoritmos
 
 ## Busqueda lineal:
 1. Buscar un número en un array estático
