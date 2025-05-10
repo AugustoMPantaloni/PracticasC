@@ -13,8 +13,23 @@
 		"int length = strlen($1);"
 		],
 			"description": "Lee una línea con fgets, elimina el salto de línea y calcula la longitud"
-	}
+	},
+
+	"main function with args": {
+		"prefix": "initMain",
+		"body": [
+			"#include <stdio.h>",
+			"",
+			"int main(int argc, char *argv[]) {",
+			"    $0",
+			"    return 0;",
+			"}"
+		],
+			"description": "Snippet de función main con argumentos en C"
+		}
 }
+
+
 
 
 
