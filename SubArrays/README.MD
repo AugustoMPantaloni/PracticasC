@@ -39,5 +39,38 @@
 
 
 
+int arr[] = {3, 5, 7};
+
+1era iteracion
+    start = 0
+    end = start (0)
+    print = start (0)
+    contador = 0
+
+    Se imprime arr[0] = 3
+    contador ++
+    contador = 1
+    print ++
+    print = 1
+    print <= end no se cumple porque end 0, print 1.
+    end ++
+    end = 1
+
+2 iteracion
+    start = 0;
+    end = 1; (no se reinicia porque end se va a seguir incremente hasta que se rompa la condicion end < n)
+    print = 0; (Se reinicia porque se rompio la condicion print <= end)
+
+    se imprime arr[0] = 3
+    contador ++
+    contador = 2
+    print ++
+    print <= end se cumple porque end 1, print 1.
+    print ++ 
+    se imprime arr[1] = 5
+    print ++
+    print <= end no se cumple porque end 1, print 2
+    end ++
+
 
 
