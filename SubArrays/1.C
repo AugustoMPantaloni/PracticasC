@@ -11,8 +11,6 @@ void subArray(int arr[], int n){
     }
 }
 
-
-
 int main(int argc, char *argv[]) {
     int arr[] = {3, 5, 7};
     int n = sizeof(arr)/sizeof(arr[0]);

@@ -26,7 +26,34 @@
 			"}"
 		],
 			"description": "Snippet de función main con argumentos en C"
+		},
+		
+    "Limpiar salto de línea": {
+        "prefix": "limpiarN", 
+        "body": [
+            "void limpiarN(char variable[]) {",
+            "    for(int i = 0; variable[i] != '\\0'; i++) {",
+            "        if(variable[i] == '\\n') {",
+            "            variable[i] = '\\0';",
+            "            break;",
+            "        }",
+            "    }",
+            "}"
+        ],
+        	"description": "Elimina el salto de línea de una cadena"
+		},
+
+	"For loop in C": {
+		"prefix": "forc",
+		"body": [
+		"for (int ${1:i} = 0; ${1:i} < ${2:10}; ${1:i}++)",
+		"{",
+		"    ${3:// código aquí}",
+		"}"
+		],
+			"description": "Bucle for clásico en C"
 		}
+
 }
 
 
