@@ -12,7 +12,7 @@
 		"}",
 		"int length = strlen($1);"
 		],
-			"description": "Lee una línea con fgets, elimina el salto de línea y calcula la longitud"
+		"description": "Lee una línea con fgets, elimina el salto de línea y calcula la longitud"
 	},
 
 	"main function with args": {
@@ -25,7 +25,7 @@
 			"    return 0;",
 			"}"
 		],
-			"description": "Snippet de función main con argumentos en C"
+		"description": "Snippet de función main con argumentos"
 		},
 		
     "Limpiar salto de línea": {
@@ -40,7 +40,7 @@
             "    }",
             "}"
         ],
-        	"description": "Elimina el salto de línea de una cadena"
+        "description": "Elimina el salto de línea de una cadena"
 		},
 
 	"For loop in C": {
@@ -51,8 +51,27 @@
 		"    ${3:// código aquí}",
 		"}"
 		],
-			"description": "Bucle for clásico en C"
+		"description": "Bucle for clásico en C"
+		},
+
+	"Print 2D Matrix": {
+		"prefix": "printmat",
+		"body": [
+			"void printMatrix(int arr[${1:SIZE}][${1:SIZE}], int size)",
+			"{",
+			"    for (int i = 0; i < size; i++)",
+				"{",
+			"        for (int j = 0; j < size; j++)",
+					"{",
+			"            printf(\"%d \", arr[i][j]);",
+					"}",
+			"        printf(\"\\n\");",
+				"}",
+			"}"
+		],
+		"description": "Función para imprimir matrices cuadradas 2D en C"
 		}
+
 
 }
 

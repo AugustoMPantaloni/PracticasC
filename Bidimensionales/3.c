@@ -1,45 +1,32 @@
 #include <stdio.h>
 
-    #define ROW 3
-    #define COLUMNS 3
 
 
-    void initArr(int arr[ROW][COLUMNS])
+void diagonal(int arr[3][3]){
+    for (int i = 0; i < 3; i++)
     {
-        for (int i = 0; i < ROW; i++)
+        for (int j = 0; j < 3; j++)
         {
-            for (int j = 0; j < COLUMNS; j++)
-            {
-                arr[i][j] = i * COLUMNS + (j + 1);
-            }
-        }
-    }
-
-    void transponerArr(int arr[ROW][COLUMNS])
-    {
-
-    }
-    
-    void printArr(int arr[ROW][COLUMNS])
-    {
-        for (int i = 0; i < ROW; i++)
-        {
-            for (int j = 0; j < COLUMNS; i++)
-            {
+            if(i == j){
                 printf("%d", arr[i][j]);
+            } else{
+                printf("0");
             }
         }
+        printf("\n");
     }
-
-int main(int argc, char *argv[]) 
-{
-
-    int arr[ROW][COLUMNS];
-
-    initArr(arr);
-    transponerArr(arr);
-    printArr(arr);
-    
-    return 0;
 }
 
+
+
+int main(int argc, char *argv[]) {
+    int arr[3][3] = {
+        {4, 7, 1},
+        {0, 5, 9},
+        {6, 2, 8}
+    };
+
+    diagonal(arr);
+
+    return 0;
+}
