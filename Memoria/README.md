@@ -28,3 +28,19 @@ Modificá tu programa anterior para:
 7. Modificar valores de un array con punteros
 - Escribí una función que reciba un array de enteros y su tamaño, y que duplique cada valor.
 - Usá punteros dentro de la función para modificar los valores.
+
+8. Asignación dinámica de memoria
+- Usá malloc para reservar memoria para un array de n cantidad enteros.
+- Pedile al usuario que ingrese cuantos numeros quiere ingresar.
+- Pedile al usuario que ingrese lo numeros.
+- Mostralos usando aritmética de punteros.
+- No te olvides de liberar la memoria con free.
+
+9. Copiar un array con punteros
+- Escribí una función que reciba dos punteros a arrays de enteros (origen y destino) y el tamaño.
+- Copiá los elementos del origen al destino usando punteros.
+
+10. Contar ocurrencias de un número
+- Escribí una función que reciba un array, su tamaño y un número objetivo.
+- Usando punteros, contá cuántas veces aparece ese número en el array.
+
