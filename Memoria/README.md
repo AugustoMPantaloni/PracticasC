@@ -33,7 +33,7 @@ Modificá tu programa anterior para:
 - Usá malloc para reservar memoria para un array de n cantidad enteros.
 - Pedile al usuario que ingrese cuantos numeros quiere ingresar.
 - Pedile al usuario que ingrese lo numeros.
-- Mostralos usando aritmética de punteros.
+- Mostra los numeros.
 - No te olvides de liberar la memoria con free.
 
 9. Copiar un array con punteros
@@ -43,4 +43,5 @@ Modificá tu programa anterior para:
 10. Contar ocurrencias de un número
 - Escribí una función que reciba un array, su tamaño y un número objetivo.
 - Usando punteros, contá cuántas veces aparece ese número en el array.
+
 
