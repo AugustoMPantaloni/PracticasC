@@ -6,7 +6,6 @@ void sumar (int *a, int *b, int *resultado){
 
 
 int main(int argc, char *argv[]) {
-
     int a = 1;
     int b = 3;
     int resultado;
