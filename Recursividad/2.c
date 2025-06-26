@@ -1,14 +1,18 @@
 #include <stdio.h>
 
-int factorial (int numero){
-    if(numero == 1){
+int factorial(int n){
+    if(n == 0){
         return 1;
     }else{
-        return numero * factorial(numero - 1);
+       return n * factorial(n - 1);
     }
+    
 }
 
+
 int main(int argc, char *argv[]) {
-    
+    int numero = 10;
+    int resultado = factorial(numero);
+    printf("%d", resultado);
     return 0;
 }

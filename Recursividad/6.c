@@ -1,16 +1,19 @@
 #include <stdio.h>
 
-    long long potencia (int n, int p){
+int pot(int n, int p){
     if(p == 0){
         return 1;
     }else{
-        return n * potencia(n, p - 1) ;
+        return n * pot(n, p - 1);
     }
 }
 
 int main(int argc, char *argv[]) {
+    int numero = 2;
+    int potencia = 5;
 
-    long long resultado = potencia(16, 5);
-    printf("%lld", resultado);
+    int resultado = pot(numero, potencia);
+    printf("%d", resultado);
+
     return 0;
 }

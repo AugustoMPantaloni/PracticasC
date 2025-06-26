@@ -1,21 +1,18 @@
 #include <stdio.h>
 
-void contador (int numero){
-    if(numero == 0){
-        return;
+int contar(int n){
+    if(n == 0){
+        return 1 ;
     } else{
-        printf("%d\n", numero);
-        contador(numero - 1);
+        printf("%d\n", n);
+        contar(n - 1);
     }
 }
 
 
-int main(void) {
-    
-
-
+int main(int argc, char *argv[]) {
+    int n = 10;
+    contar(n);
 
     return 0;
 }
-
-

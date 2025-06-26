@@ -31,11 +31,11 @@ Acceso a elementos con sintaxis de puntero: *(arr + i) y arr[i].
 Diferencia entre arr y &arr[i].
 Recorrido con punteros.
 Ejercicios:
-Crear un array de 5 enteros y recorrerlo usando punteros (*(arr + i)).
+7- Crear un array de 5 enteros y recorrerlo usando punteros (*(arr + i)).
 
-Función void imprimir_array(int *arr, int n) que recorra el array solo con punteros.
+8- Función void imprimir_array(int *arr, int n) que recorra el array solo con punteros.
 
-Sumar todos los elementos del array usando punteros.
+9- Sumar todos los elementos del array usando punteros.
 
 🔄 Nivel 4 – Punteros a punteros
 Objetivo: Empezar a entender el acceso doble (útil para strings y memoria dinámica más adelante).
@@ -43,11 +43,11 @@ Conceptos:
 int *p es un puntero a int → int **pp es un puntero a puntero.
 Aplicación con matrices y parámetros dobles.
 Ejercicios:
-Declarar un int x = 10, int *p = &x, int **pp = &p. Imprimir todo: x, *p, **pp, direcciones.
+10- Declarar un int x = 10, int *p = &x, int **pp = &p. Imprimir todo: x, *p, **pp, direcciones.
 
-Función que reciba int **pp y cambie el valor original (**pp = 99).
+11- Función que reciba int **pp y cambie el valor original (**pp = 99).
 
-Jugar con char *str = "Hola" y punteros a char (solo leer, no modificar).
+12- Jugar con char *str = "Hola" y punteros a char (solo leer, no modificar).
 
 🛠️ Nivel 5 – Strings y punteros (sin malloc)
 Objetivo: Manejar cadenas como punteros (char *), entender cómo viajan los caracteres.
@@ -56,8 +56,8 @@ char * como puntero al primer carácter de un string.
 Recorrer strings con punteros.
 No modificar literales (porque son constantes).
 Ejercicios:
-Función void imprimir_string(const char *s) que recorra el string y lo imprima letra por letra usando punteros.
+13- Función void imprimir_string(const char *s) que recorra el string y lo imprima letra por letra usando punteros.
 
-Función int longitud(const char *s) que calcule la longitud sin strlen.
+14- Función int longitud(const char *s) que calcule la longitud sin strlen.
 
-Función void copiar(const char *origen, char *destino) que copie string carácter por carácter.
+15- Función void copiar(const char *origen, char *destino) que copie string carácter por carácter.
