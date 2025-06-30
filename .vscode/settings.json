@@ -3,6 +3,7 @@
         "ABC.C": "cpp",
         "array": "c",
         "stdio.h": "c",
-        "1.C": "cpp"
+        "1.C": "cpp",
+        "stdlib.h": "c"
     }
 }
